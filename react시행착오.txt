@@ -1,0 +1,28 @@
+#node.js 설치 과정(nvm 사용)
+그냥 node.js 홈페이지에서 파일로 다운받으면 여러버전을 사용할 수 없고 변경이 불가능해진다. 
+그래서 다음의 과정을 수행한다. nvm을 사용하려면 파일로 다운 받으면 절대!절대! 안된다 상당히 곤란한 일이 생긴다.
+구글 nvm-windows 검색
+https://github.com/coreybutler/nvm-windows 접속
+Download Now! 쪽으로 가서
+nvm-setup.zip 다운 및 설치
+
+#node.js 설치 후
+yarn을 사용할 경우 npm install -g yarn
+
+#React 앱 설치 과정
+*npx create-react-app my-app --scripts-version 2.1.7
+create-react-app은 최신버전 node에서만 가능해서 실행 후 do it 리액트 프로그래밍 정석 실습을 위해 10.10.0버전으로 변경했다.
+
+#node-sass
+scss, sass예제를 실행할 때 에러가 나는 경우가 있다. 그럴 땐 node 최신버전 상태에서 npm uninstall node-sass를 하고 src폴더에서
+yarn add node-sass@4.14.0을 실행해본다. npm rebuild node-sass도 해볼것 그 후 다시 node 10.10.0 버전으로 오는거 있지말것
+
+#Redux createStore 취소선 이슈
+npm uninstall redux react-redux 한 다음에
+npm install redux@4.1.2 react-redux 합시다
+
+#json-server
+0.14.2 사용
+
+
+*프로젝트 폴더 위치를 옮기면 상위항목들을 다시 설치해야하는 경우가 많다.*
